@@ -42,15 +42,14 @@ def temperature_converter():
     print("Temperature Converter")
     print("-" * 30)
 
-# prompting temp input
-try: 
-    temp = float(input("Enter the temperature value: "))
-except Valueerror:
-    print("X Invalid temperature. Please enter a number")
-return
-# define units
-unit = input ("Enter the unit (C for Celsius, F for Fahrenheit): ")
-# perform conversion
+    try:
+        temp = float(input("Enter the temperature value: "))
+    except ValueError:
+        print("X Invalid temperature. Please enter a number")
+        return
+
+unit = input ("Enter the unit (C for Celsius, F for Fahrenheit):")
+
 if unit == "C":
     print(f"{temp:.2f}°C = {celsius_to_fahrenheit(temp):.2f}°F")
 elif unit == "F":
