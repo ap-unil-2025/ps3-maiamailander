@@ -45,7 +45,7 @@ def temperature_converter():
     try:
         temp = float(input("Enter the temperature value: "))
     except ValueError:
-        print("X Invalid temperature. Please enter a number")
+        print("Invalid temperature. Please enter a number")
         return
 
     unit = input ("Enter the unit (C for Celsius, F for Fahrenheit):")
@@ -55,7 +55,7 @@ def temperature_converter():
     elif unit == "F":
         print(f"{temp:.2f}°F = {fahrenheit_to_celsius(temp):.2f}°C")
     else:
-        print("X Invalid unit. Please enter C or F.")
+        print("Invalid unit. Please enter C or F.")
 
 # Test cases (DO NOT MODIFY)
 if __name__ == "__main__":
