@@ -13,3 +13,7 @@ git log --oneline > git_log.txt
 git commit -m "Add git history"
 git add assignmentcode.txt
 git commit -m "New code file"
+git add problem2.py$
+git commit -m "cels to fahr"
+git add problem2.py
+git commit -m "fahr to cels"
