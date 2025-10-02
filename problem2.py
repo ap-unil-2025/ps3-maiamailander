@@ -48,13 +48,13 @@ def temperature_converter():
         print("X Invalid temperature. Please enter a number")
         return
 
-unit = input ("Enter the unit (C for Celsius, F for Fahrenheit):")
+    unit = input ("Enter the unit (C for Celsius, F for Fahrenheit):")
 
-if unit == "C":
+    if unit == "C":
     print(f"{temp:.2f}°C = {celsius_to_fahrenheit(temp):.2f}°F")
-elif unit == "F":
+    elif unit == "F":
     print(f"{temp:.2f}°F = {fahrenheit_to_celsius(temp):.2f}°C")
-else:
+    else:
     print("X Invalid unit. Please enter C or F.")
 
 # Test cases (DO NOT MODIFY)
