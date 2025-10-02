@@ -1,4 +1,4 @@
-git clone https://github.com/ap-unil-2025/ps3 maiamailander.git
+git clone https://github.com/ap-unil-2025/ps3-maiamailander.git
 git add README.md
 git commit -m "Add my name and date"
 git push
