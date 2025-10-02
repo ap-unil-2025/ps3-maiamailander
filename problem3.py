@@ -12,13 +12,17 @@ def get_numbers_from_user():
         list: List of numbers entered by user
     """
     numbers = []
-
     while True:
-        # TODO: Get input from user
-        # TODO: Check if user typed 'done'
-        # TODO: Try to convert to float and add to list
-        # TODO: Handle invalid input gracefully
-        pass
+        user_input = input("Enter a number (or 'done' to finish): ")
+
+        if user_input.strip().lower() == "done":
+            break
+
+        try:
+            num = float(user_input)
+            numbers.append(num)
+        except ValueError:
+            print("Invalid input. Please enter a number or 'done'.")
 
     return numbers
 
@@ -45,14 +49,24 @@ def analyze_numbers(numbers):
 
     analysis = {}
 
-    # TODO: Calculate count
-    # TODO: Calculate sum
-    # TODO: Calculate average
-    # TODO: Find minimum
-    # TODO: Find maximum
-    # TODO: Count even numbers (hint: use modulo operator)
-    # TODO: Count odd numbers
+    analysis['count'] = len(numbers)
+    analysis['sum'] = sum(numbers)
+    analysis['average'] = sum(numbers) / len(numbers)
+    analysis['minimum'] = min(numbers)
+    analysis['maximum'] = max(numbers)
 
+    even_count = 0
+    odd_count = 0
+    for num in numbers:
+        if isinstance(num, int) or num.is_integer():
+            if int(num) % 2 == 0:
+                even_count += 1
+            else:
+                odd_count += 1
+
+    analysis['even_count'] = even_count
+    analysis['odd_count'] = odd_count
+    
     return analysis
 
 
@@ -68,15 +82,11 @@ def display_analysis(analysis):
 
     print("\nAnalysis Results:")
     print("-" * 20)
-
-    # TODO: Display all analysis results in a nice format
-    # Example:
-    # Count: 5
-    # Sum: 25
-    # Average: 5.00
-    # etc.
-    pass
-
+    print(f"Count: {analysis["count"]}")
+    print(f"Sum: {analysis["sum"]}")
+    print(f"Average: {analysis["average"]}")
+    print(f"Minimum: {analysis["minimum"]}")
+    print(f"Maximum: {analysis["maximum"]}")
 
 def main():
     """Main function to run the number analyzer."""
