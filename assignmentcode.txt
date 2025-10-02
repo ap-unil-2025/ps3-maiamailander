@@ -17,3 +17,15 @@ git add problem2.py$
 git commit -m "cels to fahr"
 git add problem2.py
 git commit -m "fahr to cels"
+git add assignmentcode.txt
+git commit -m "temp conversions codes"
+git add problem2.py
+git commit -m "Temp Converter Final"
+git add problem2.py
+git commit -m "Temp converter final"
+git add problem2.py
+git commit -m "Temp Converter coded"
+git add problem2.py
+git commit -m "Temp Converter correct"
+git add problem2.py
+git commit -m "Final final problem 2"
