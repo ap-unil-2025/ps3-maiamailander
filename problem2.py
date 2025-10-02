@@ -48,7 +48,7 @@ def temperature_converter():
         print("Invalid temperature. Please enter a number")
         return
 
-    unit = input ("Enter the unit (C for Celsius, F for Fahrenheit):")
+    unit = input ("Enter the unit (C for Celsius, F for Fahrenheit):").upper()
 
     if unit == "C":
         print(f"{temp:.2f}°C = {celsius_to_fahrenheit(temp):.2f}°F")
