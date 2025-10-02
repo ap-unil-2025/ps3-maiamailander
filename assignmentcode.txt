@@ -4,3 +4,12 @@ git commit -m "Add my name and date"
 git push
 git log
 git log --oneline
+touch hello_git.py
+git add hello_git.py
+git commit -m "Add hello_git.py"
+git add hello_git.py
+git commit -m "Personalize hello message"
+git log --oneline > git_log.txt
+git commit -m "Add git history"
+git add assignmentcode.txt
+git commit -m "New code file"
