@@ -87,6 +87,8 @@ def display_analysis(analysis):
     print(f"Average: {analysis["average"]}")
     print(f"Minimum: {analysis["minimum"]}")
     print(f"Maximum: {analysis["maximum"]}")
+    print(f"Even counts: {analysis["evens"]}")
+    print(f"Odd counts: {analysis["odds"]}")
 
 def main():
     """Main function to run the number analyzer."""
