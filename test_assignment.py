@@ -1,4 +1,4 @@
-+"""
+"""
 Automated tests for Problem Set 3.
 These tests will be run by GitHub Classroom autograding.
 """
